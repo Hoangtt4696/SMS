@@ -28,7 +28,7 @@
                                 <tr>
                                     <th>Người tạo</th>
                                     <th>Tổng tiền</th>
-                                    <th>&nbsp;</th>
+                                    {{--<th>&nbsp;</th>--}}
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -36,10 +36,10 @@
                                     <tr>
                                         <td>{{$invoice->employee_name}}</td>
                                         <td>{{number_format($invoice->price)}}</td>
-                                        <td>
-                                            <button class="btn btn-secondary">Sửa</button>
-                                            <button class="btn btn-danger">Xóa</button>
-                                        </td>
+                                        {{--<td>--}}
+                                            {{--<button class="btn btn-secondary">Sửa</button>--}}
+                                            {{--<button class="btn btn-danger">Xóa</button>--}}
+                                        {{--</td>--}}
                                     </tr>
                                 @endforeach
                                 </tbody>
