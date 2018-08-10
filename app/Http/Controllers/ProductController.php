@@ -25,7 +25,7 @@ class ProductController extends Controller
     if (session()->has('shopID')) {
       $shopID = session('shopID');
     }
-    $res = $client->get('localhost/smaapi/product_type/index.php?shop_id='.$shopID);
+    $res = $client->get('localhost/smaapi/product_type/index2.php?shop_id='.$shopID);
     $productTypes = \GuzzleHttp\json_decode($res->getBody());
     return view('Pages.Product.New', compact('productTypes'));
   }
@@ -76,7 +76,7 @@ class ProductController extends Controller
       $shopID = session('shopID');
     }
     $res = $client->get('localhost/smaapi/product/find_by_id.php?id='.$req->id.'&shop_id='.$shopID);
-    $res2 = $client->get('localhost/smaapi/product_type/index.php?shop_id='.$shopID);
+    $res2 = $client->get('localhost/smaapi/product_type/index2.php?shop_id='.$shopID);
     $productTypes = \GuzzleHttp\json_decode($res2->getBody());
     $product = \GuzzleHttp\json_decode($res->getBody());
     return view('Pages.Product.Edit', compact('product', 'productTypes'));

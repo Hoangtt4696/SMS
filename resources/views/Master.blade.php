@@ -14,16 +14,9 @@
 
     <link rel="apple-touch-icon" href="apple-icon.png">
     <link rel="shortcut icon" href="favicon.ico">
-
-    {{--<link rel="stylesheet" href="/css/normalize.css">--}}
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/font-awesome.min.css">
-    {{--<link rel="stylesheet" href="/css/themify-icons.css">--}}
-    {{--<link rel="stylesheet" href="/css/flag-icon.min.css">--}}
-    {{--<link rel="stylesheet" href="/css/cs-skin-elastic.css">--}}
-    <!-- <link rel="stylesheet" href="assets//css/bootstrap-select.less"> -->
     <link rel="stylesheet" href="/scss/style.css">
-    {{--<link href="/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">--}}
     <link rel="stylesheet" href="/css/lib/datatable/dataTables.bootstrap.min.css">
     <link rel="stylesheet" href="/css/lib/chosen/chosen.min.css">
     <link rel="stylesheet" href="/css/styles.css">
@@ -48,37 +41,11 @@
     <script src="/js/main.js"></script>
     <script src="/js/lib/chart-js/Chart.bundle.js"></script>
     <script src="/js/dashboard.js"></script>
-    {{--<script src="/js/widgets.js"></script>--}}
-    {{--<script src="/js/lib/vector-map/jquery.vmap.js"></script>--}}
-    {{--<script src="/js/lib/vector-map/jquery.vmap.min.js"></script>--}}
-    {{--<script src="/js/lib/vector-map/jquery.vmap.sampledata.js"></script>--}}
-    {{--<script src="/js/lib/vector-map/country/jquery.vmap.world.js"></script>--}}
-    {{--<script>--}}
-        {{--( function ( $ ) {--}}
-            {{--"use strict";--}}
-
-            {{--jQuery( '#vmap' ).vectorMap( {--}}
-                {{--map: 'world_en',--}}
-                {{--backgroundColor: null,--}}
-                {{--color: '#ffffff',--}}
-                {{--hoverOpacity: 0.7,--}}
-                {{--selectedColor: '#1de9b6',--}}
-                {{--enableZoom: true,--}}
-                {{--showTooltip: true,--}}
-                {{--values: sample_data,--}}
-                {{--scaleColors: [ '#1de9b6', '#03a9f5' ],--}}
-                {{--normalizeFunction: 'polynomial'--}}
-            {{--} );--}}
-        {{--} )( jQuery );--}}
-    {{--</script>--}}
 
     <script src="/js/lib/data-table/datatables.min.js"></script>
     <script src="/js/lib/data-table/dataTables.bootstrap.min.js"></script>
     <script src="/js/lib/data-table/dataTables.buttons.min.js"></script>
     <script src="/js/lib/data-table/buttons.bootstrap.min.js"></script>
-    {{--<script src="/js/lib/data-table/jszip.min.js"></script>--}}
-    {{--<script src="/js/lib/data-table/pdfmake.min.js"></script>--}}
-    {{--<script src="/js/lib/data-table/vfs_fonts.js"></script>--}}
     <script src="/js/lib/data-table/buttons.html5.min.js"></script>
     <script src="/js/lib/data-table/buttons.print.min.js"></script>
     <script src="/js/lib/data-table/buttons.colVis.min.js"></script>
@@ -113,5 +80,6 @@
 
     <script src="/js/lib/chart-js/Chart.bundle.js"></script>
     <script src="/js/lib/chart-js/chartjs-init.js"></script>
+    @yield('script')
 </body>
 </html>

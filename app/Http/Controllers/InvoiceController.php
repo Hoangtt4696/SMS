@@ -37,4 +37,21 @@ class InvoiceController extends Controller
 
       return view('Pages.Invoice.New', compact('idCus', 'products'));
     }
+
+    public function paid(Request $req) {
+      $employeeID = session('id');
+      $client = new Client();
+      $client->post(
+        'http://localhost/smaapi/invoice/create.php',
+        [
+          'form_params' => [
+            'idCus' => $req->idCus,
+            'employee_id' => $employeeID,
+            'totalPrice' => $req->total,
+            'arrProducts' => $req->arrInvoice
+          ]
+        ]
+      );
+      return redirect()->route('listOrder');
+    }
 }

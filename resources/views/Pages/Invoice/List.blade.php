@@ -1,6 +1,6 @@
 @extends('Index')
 
-@section('title', 'Sản phẩm')
+@section('title', 'Đơn hàng')
 
 @section('content')
     <style>
@@ -20,7 +20,7 @@
                     <div class="card">
                         <div class="card-header">
                             <strong class="card-title">Hóa đơn</strong>
-                            <button class="btn btn-success" style="float: right; border-radius: .4rem"><a style="color: #fff" href="">Thêm mới</a></button>
+                            <button class="btn btn-success" style="float: right; border-radius: .4rem"><a style="color: #fff" href="{{route('newCustomer')}}">Thêm mới</a></button>
                         </div>
                         <div class="card-body">
                             <table id="bootstrap-data-table" class="table table-striped table-bordered">

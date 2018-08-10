@@ -48,10 +48,12 @@ class EmployeeController extends Controller
       $role = $data->employee_type_id;
       $email = $data->email;
       $id = $data->id;
+      $picture = $data->picture;
       $req->session()->put('shopID',$shop_id);
       $req->session()->put('role',$role);
       $req->session()->put('email',$email);
       $req->session()->put('id',$id);
+      $req->session()->put('avatar',$picture);
 
       return redirect()->route('home');
   }
@@ -140,5 +142,10 @@ class EmployeeController extends Controller
     );
 
     return redirect(route('listEmployee'));
+  }
+
+  public function logout(Request $req) {
+    session()->flush();
+    return redirect()->route('login');
   }
 }

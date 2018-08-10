@@ -1,6 +1,5 @@
 <aside id="left-panel" class="left-panel">
     <nav class="navbar navbar-expand-sm navbar-default">
-
         <div class="navbar-header">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars"></i>
@@ -34,6 +33,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Đơn hàng</a>
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="menu-icon fa fa-th"></i><a href="{{route('newCustomer')}}">Tạo đơn hàng</a></li>
+                        <li><i class="menu-icon fa fa-th"></i><a href="{{route('listOrder')}}">Danh sách đơn hàng</a></li>
                     </ul>
                 </li>
                 <li class="menu-item-has-children dropdown">
@@ -45,6 +45,8 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bar-chart"></i>Thống kê</a>
                         <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-th"></i><a href="{{route('statisticProduct')}}">Sản phẩm</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="{{route('statisticRevenue')}}">Doanh thu</a></li>
                         </ul>
                     </li>
                 @endif
