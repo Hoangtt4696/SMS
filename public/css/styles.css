@@ -1,0 +1,11 @@
+.modal-header {
+    background-color: #04b79f!important;
+}
+
+.modal-header .modal-title {
+    color: #fff!important;
+}
+
+.close {
+    color: #fff!important;
+}
